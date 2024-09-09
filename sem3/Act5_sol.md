@@ -13,28 +13,42 @@ bien poterior a ello modificamos el archivo package .json
 
 bien posterioa ello lo que hacemos es la creacion del modulo de rutals
 ```js
+// Importamos el módulo node-fetch para realizar solicitudes HTTP desde Node.js
 import fetch from "node-fetch";
 
-const routeHello = () => "Hello world!";
+// Definimos la función routeHello que simplemente devuelve "Hello world!"
+// Esta función será utilizada para responder a las solicitudes en la ruta /hello
+const routeHello = () => "Hello seia-world!";
 
-const routeAPINames = async ()=>{
+// Definimos la función asíncrona routeAPINames que hará una solicitud a una API externa
+const routeAPINames = async () => {
+    // Definimos la URL de la API externa desde donde vamos a obtener los datos
     const url = "https://www.usemodernfullstack.dev/api/v1/users";
     let data;
 
     try {
-        const response = await fetch (url);
+        // Realizamos la solicitud HTTP a la API externa usando fetch
+        const response = await fetch(url);
+        // Esperamos a que la respuesta se convierta en un objeto JSON
         data = await response.json();
-    }catch (err){
+    } catch (err) {
+        // Si hay algún error en la solicitud, devolvemos el error
         return err;
     }
+
+    // Mapeamos los datos recibidos para crear una lista de usuarios
+    // Cada elemento es transformado a un string con el formato `id: valor, name: valor`
     const names = data
         .map((item) => `id: ${item.id}, name: ${item.name}`)
+        // Unimos cada string con un salto de línea HTML (<br>)
         .join("<br>");
+
+    // Devolvemos la lista de nombres formateada
     return names;
-
 };
-export{routeHello, routeAPINames};
 
+// Exportamos las funciones para que puedan ser utilizadas en otros archivos (como en el servidor Express)
+export { routeHello, routeAPINames };
 
 ```
 
