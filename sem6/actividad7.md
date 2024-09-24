@@ -12,3 +12,22 @@ const element = <h1>Hello, {name}</h1>;
 ```
 JSX -> babel -> js -> browser
 
+en jsx los atributos son similares a los atributos de html
+
+en esta linea decimos que es dinamica
+```jsx
+const url = "httaps://example.com";
+const elemet1 =<a href ={url} > ir al sitio </a>;
+
+```
+un algoritmo de diferencias lo que hace react para comprar el DOM real y el DOM virtual al momento de optimizar problemas de rendimiento.
+
+tener en cuenta para las palabras reservadas.
+y no siempre es obvio cuando hay un error
+hay que tener la configuracion del entorno.
+
+aparte de babel existe [web pack](https://webpack.js.org/) y [create react app](https://create-react-app.dev/)
+
+
+
+
