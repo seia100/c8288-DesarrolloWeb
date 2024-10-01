@@ -1,0 +1,46 @@
+# Repuestas de los ejercicios
+## Ejercicio 1
+> Simulacion de un servidor web con temporizadores y async/await
+## pruebas
+
+
+
+## Ejercicio 3
+sistema de registro y validacion con tipos refinados y callbacks
+
+
+### pruebas
+// Ejemplo de uso
+var usuarioEntrada = {
+    nombre: "Juan",
+    email: "juan@example.com",
+    phone: "+1234567890",
+    edad: 30,
+};
+//output: 
+Usuario Juan registrado con éxito.
+
+// Ejemplo de uso
+var usuarioEntrada = {
+    nombre: "798as",
+    email: "juanexample.com",
+    phone: "987564546513",
+    edad: 30,
+};
+
+//output: 
+Errores de validación encontrados
+El nombre es inválido. Debe contener solo letras.
+El email no es válido.
+
+// Ejemplo de uso
+var usuarioEntrada = {
+    nombre: "798as",
+    email: "luis.arenas@gmail.com",
+    phone: "987564546513",
+    edad: 30,
+};
+//output
+Errores de validación encontrados
+El nombre es inválido. Debe contener solo letras.
+
