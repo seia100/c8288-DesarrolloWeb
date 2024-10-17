@@ -1,0 +1,18 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "console.log('sopi');\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "hola como tan pibe\n"
+            ],
+            "outputs": []
+        }
+    ]
+}
