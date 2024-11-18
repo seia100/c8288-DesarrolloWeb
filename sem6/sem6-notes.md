@@ -57,3 +57,6 @@ tipos de pruebas:
 - snap shot test
 - pruebas de integracion
 - pruebas de extremo a extremo 
+
+
+
